@@ -1,0 +1,97 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 33,
+            "value": "#|Fayroz|Arabic|"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 1999256212,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Delete created place",
+        "description": "",
+        "id": "testing-the-functionality-of-google-places;delete-created-place",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 53275825,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Delete created place payload",
+            "match": {
+              "location": "googlePlaceSteps.delete_created_place()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 344818351,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User wants to call \"deletePlaceAPI\" with http method \"DELETE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "deletePlaceAPI",
+                  "offset": 20
+                },
+                {
+                  "val": "DELETE",
+                  "offset": 54
+                }
+              ],
+              "location": "googlePlaceSteps.user_wants_to_call_request_with_httpMethod(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7929379,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "googlePlaceSteps.status_code_should_be_200(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 35,
+            "name": "@DeletePlace"
+          }
+        ]
+      }
+    ],
+    "name": "Testing the functionality of google places",
+    "description": "",
+    "id": "testing-the-functionality-of-google-places",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/googlePlace.feature"
+  }
+]
